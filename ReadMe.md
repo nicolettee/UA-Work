@@ -1,42 +1,36 @@
-# Exercise 11 
+# U of A Front End Development Course Information
 
-## Javascript
-This assignment is going to go over most of what we have covered this week.  Perform all of these tasks in the JS-Assignment folder. You should only need to modify the main.js file.
+## [Session Decks](http://uagc-it-readiness.github.io/front-end-development-course-info/)
 
-There is existing code inside of main.js that is executed when the 'Update Values' button is pressed.  The existing code currently retrieves the values from the text boxes and logs them to the console.  Add code to calculate out the values described in the strong tags and  populate the corresponding span tags with the values.
+# Instructor Contact Information
+- Daniel Worthy 
+  - Slack - [@WorthyD](https://ua-itreadiness.slack.com/team/worthyd)  
 
-### First Name and Last name
-Set the following element's innerHTML with the following values
+I'll do my best to get back with you within 24 hours.  I'd recommend posting questions to the Slack Front End room.
 
-- `p1_fullName` - combine `firstName` and `lastName` with a space in between them
--  `p1_valid` -  boolean value - are `firstName` and `lastName` filled out?
-- `p1_fullNameLength` - the number of characters in both `firstName` and `lastName`
+# Meeting Times - 
+- Tuesday and Thursday - 5:30 to 9:00
+- Every Other Saturday   - 9:00 to 1:00
+- We'll have breaks during class for meals, snack, etc. There is a fridge and microwave available.
+- **Inclement Weather Policy** - We wont have class if the U of A is closed.
+- An email will be sent 
 
-### Email Address
-Set the following element's innerHTML with the following values
+# Classroom Policies
+- Drinks need to be in closed containers
+- Attendance is mandatory
+  - Notify the instructor if you will be unable to attend class
+  - Video conference calls can be made if needed.
+- Cellphones silenced during class
 
-- `p2_email` - put the value of `emailAddress` here
-- `p2_valid` - does `emailAddress` contain the "@" symbol? (boolean value)
-- `p2_emailLength` - the number of characters in `emailAddress`
+# Course Description
+This course will walk you through front-end web application development. The course will teach a number of technologies including HTML, CSS, and JavaScript frameworks. It will also provide context on how front-end applications interact with APIs and other back-end technologies.
 
-### Numbers 
-Set the following element's innerHTML with the following values
+# Goal
+Upon completion of this course, you will be able to create an interactive website and deploy it to a cloud-based hosting provider. You will be able to apply your front-end skills to a variety of off-the-shelf or SAAS (Software as a Service) solutions such as WordPress, Shopify, SquareSpace, etc. You will also understand the role that developers play on an overall product team to prepare you for a transition into a work environment.
 
-- `p3_number` - put `randomNumber`'s value here
-- `p3_valid` - is `randomNumber` a number? Hint: try to parse the number. If it's a number it will be greater than 0.
+# Academic Integrity
+- We expect students to abide by the [University of Arkansas's Academic Integrity Policy](http://honesty.uark.edu/policy/)
 
-### Arrays 
-
-- Add the value of `arrayInput` to the array named `arrayItems`. `arrayItems is declared on the first line of the file.
-- `p4_arraylength` - the number of items in `arrayItems`
-- `p4_valid` - the value of `arrayItems`
-
-
-
-### Additional Challenge 
-- In part 1, 2, and 3, if the input field is invalid (it's empty or doesn't meet all of its requirements), add a class of `invalid`. This class is already in the CSS.
-- At the beginning of the function, remove the class `invalid` from all inputs
-
-
-## CSS 
-- Open up the webpage at [https://worthyd.github.io/dummy-sites/news-page/](https://worthyd.github.io/dummy-sites/news-page/) and recreate it to the best of your ability. Use your own html structure and classes.
+# Additional Resources
+- [Tools](tools.md)
+- [Extra Reading on Topics](topics.md)
