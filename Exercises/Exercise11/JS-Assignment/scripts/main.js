@@ -9,8 +9,8 @@ function update() {
     var lastName = getValue('lastName');
     var fullName = firstName + " " + lastName;
     var p1_Valid = "";
-    console.log(firstName);
-    console.log(lastName);
+    console.log("the firstName = " + firstName);
+    console.log("the lastName = " + lastName);
     getElm("p1_fullName").innerHTML = fullName;
     if (firstName.length === 0 || lastName.length === 0){
     p1_Valid = false;
@@ -24,15 +24,15 @@ getElm("p1_fullNameLength").innerHTML = fullName.length;
    
 // Part 2
     var emailAddress = getValue('emailAddress');
-    console.log(emailAddress);
+    console.log("the emailAddress = " + emailAddress);
     getElm("p2_email").innerHTML = emailAddress;
     
     var isValidEmail = (emailAddress.indexOf('@') > -1);
+    //Tried to figure out how to document an error to the page. Ran out of time.
     if (isValidEmail === true){
-        console.log("boom");
+        console.log("email is valid");
     } else{
-        console.log("whaa");
-        alert("Please enter valid email.");
+        console.log("email is not valid");  
     }
     console.log("isVAlidEmail = " + isValidEmail); 
    getElm("p2_valid").innerHTML = isValidEmail;
@@ -43,7 +43,7 @@ getElm("p1_fullNameLength").innerHTML = fullName.length;
    
    // Part 3
     var randomNumber = getValue('randomNumber');
-    console.log(randomNumber);
+    console.log("the randomNumer = " + randomNumber);
     getElm("p3_number").innerHTML = randomNumber;
  
     !isNaN(randomNumber);
@@ -52,7 +52,7 @@ getElm("p1_fullNameLength").innerHTML = fullName.length;
 
     // Part 4
     var arrayInput = getValue('arrayValue');
-    console.log(arrayInput);
+    console.log("the arrayInput = " + arrayInput);
     arrayItems.push(arrayInput);
     
     getElm("p4_arraylength").innerHTML = arrayItems.length;
