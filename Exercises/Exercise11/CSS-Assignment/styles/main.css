@@ -64,10 +64,10 @@ border-radius: 25px;
 
 /*begin currentEvents */
 .section{
-    clear: both;
     margin: 10px auto;
 }
 .section-header{
+    clear: both;
     border: 1px solid #069;
     border-left: none;
     border-right: none;
@@ -101,15 +101,22 @@ border-radius: 25px;
     float: left;
     max-width: 50%;
     padding: 10px;
-}
-/*aside{
-    float: right;
+} 
+/* end articles */
+
+/* begin ads */
+aside{
+    float: right; 
+    width:33.3%;
 }
 .sponsors img{
     float: left;
     padding: 10px;
     width: 50%;
-}*/
+}
+/* end ads */
+
+/* begin footer */
 footer{
     clear: both;
     padding: 20px 0;
@@ -124,3 +131,4 @@ footer nav{
 footer a{
     padding 0 10px;
 }
+/* end footer */
