@@ -24,7 +24,7 @@ var z = str.indexOf('h');
 var bo = 'true'; 
 var a = (bo === true);
 //Answer:
-//a = true
+//a = false
 ///
 
 
