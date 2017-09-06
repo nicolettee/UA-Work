@@ -5,7 +5,8 @@ function addZero(i) {
     return i;
 }
 var dateFormatter = {
-   getShortTime: function(date) {
+    //Short Time function
+    getShortTime: function(date) {
     var hour = date.getHours();
     var minutes = addZero(date.getMinutes());
     var amPm = (hour < 12) ? "AM": "PM";
@@ -14,7 +15,8 @@ var dateFormatter = {
     }
     return hour + ":" + minutes + " " + amPm;
 },
-getLongTime: function(date) {
+    //Long Time function
+    getLongTime: function(date) {
     var hour = date.getHours();
     var minutes = addZero(date.getMinutes());
     var seconds = addZero(date.getSeconds());
@@ -22,30 +24,34 @@ getLongTime: function(date) {
     if (hour > 12) {
         hour = hour -12;
     }
-    return hour + ":" + minutes + " " + amPm;
+    return hour + ":" + minutes +  ":" + seconds + " " + amPm;
 },
-getShortDate: function(date) {
+    //Short Date function
+    getShortDate: function(date) {
     var month = date.getMonth() +1;
     var day = date.getDate();
     var year = date.getFullYear();
     return month + "/" + day + "/" + year;
 },
-getLongDate: function(date) {
+    //Long Date function
+    getLongDate: function(date) {
     var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var m = date.getMonth() +1;
+    var m = date.getMonth();
     var day = date.getDate();
     var year = date.getFullYear();
     var moty = month[m];
     return moty + " " + day + ", " + year;
 },
-getLongDateTime: function(date){
-    return this.getLongDate(date) + " " + this.getShortTime(date);
-},
-getShortDateTime: function(date){
+    //Short Date and Short Time function
+    getShortDateTime: function(date){
     return this.getShortDate(date) + " " + this.getShortTime(date);
 },
-
-getExtendedDate: function(date) {
+    //Long Date and Short Time function
+    getLongDateTime: function(date){
+    return this.getLongDate(date) + " " + this.getShortTime(date);
+},
+    //Day of Week, Long Date and Short Time
+    getExtendedDateTime: function(date) {
     var weekday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     var i = date.getDay();
     var dotw = weekday[i];
@@ -58,4 +64,5 @@ console.log("Long time " + dateFormatter.getLongTime(new Date()));
 console.log("Short date " + dateFormatter.getShortDate(new Date()));
 console.log("Long date " + dateFormatter.getLongDate(new Date()));
 console.log("Short date, and time " + dateFormatter.getShortDate(new Date()));
-console.log("Extended date, and time " + dateFormatter.getExtendedDate(new Date()));
+console.log("Long date and time " + dateFormatter.getLongDateTime(new Date()));
+console.log("Extended date, and time " + dateFormatter.getExtendedDateTime(new Date()));
