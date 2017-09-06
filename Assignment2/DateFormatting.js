@@ -39,17 +39,17 @@ getLongDate: function(date) {
     return moty + " " + day + ", " + year;
 },
 getLongDateTime: function(date){
-    return this.getLongDate() + " " + this.getShortTime();
+    return this.getLongDate(date) + " " + this.getShortTime(date);
 },
 getShortDateTime: function(date){
-    return this.getShortDate() + " " + this.getShortTime();
+    return this.getShortDate(date) + " " + this.getShortTime(date);
 },
 
 getExtendedDate: function(date) {
     var weekday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     var i = date.getDay();
     var dotw = weekday[i];
-    return dotw + this.getLongDateTime();
+    return dotw + " " + this.getLongDateTime(date);
 },
 };
 
@@ -57,5 +57,5 @@ console.log("Short time " + dateFormatter.getShortTime(new Date()));
 console.log("Long time " + dateFormatter.getLongTime(new Date()));
 console.log("Short date " + dateFormatter.getShortDate(new Date()));
 console.log("Long date " + dateFormatter.getLongDate(new Date()));
-console.log("Short date, and time " + dateFormatter.getShortDateTime(new Date()));
-console.log("Extended date, and time " + dateFormatter.getExtendedDateTime(new Date()));
+console.log("Short date, and time " + dateFormatter.getShortDate(new Date()));
+console.log("Extended date, and time " + dateFormatter.getExtendedDate(new Date()));
