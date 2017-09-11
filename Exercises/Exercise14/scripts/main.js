@@ -12,11 +12,15 @@ function submit(){
     if (elm.value.length === 0 && elm != elm[3,4]) {
         messages.push(elm.placeholder + "is required")
         elm.classList.add("invalid");
-        getElm("messages").innerHTML = message;
+        getElm("messages").innerHTML = "message";
+        console.log(elm.placeholder + "is required.")
     }else if(elm[3,4].checked == false){
         messages.push(elm.placeholder + "is required")
         elm.classList.add("invalid");
-        getElm("messages").innerHTML = message;
+        getElm("messages").innerHTML = "message";
+        console.log(elm.placeholder + "is required.")
+    }else{
+        getElm("messages").innerHTML = "Success!"
     }
 }
 
