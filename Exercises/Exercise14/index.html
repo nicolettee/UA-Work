@@ -11,9 +11,40 @@
 
         </section>
         <section class="inputs">
+                <form class="form-elements">
+                        <div class="input-group">
+                            <label for="userName">User Name</label>
+                            <input type="text" name="userName" id="userName" placeholder="User Name">
+                        </div>
+                       <div class="input-group">
+                            <label for="emailAddress">Email Address</label>
+                            <input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </div>
+                       <div class="input-group">
+                            <label for="timezone">Time Zone</label>
+                            <select id="timezone">
+                                <option value=""></option>
+                                <option>Eastern</option>
+                                <option>Central</option>
+                                <option>Mountain</option>
+                                <option>Pacific</option>
+                            </select>
+                        </div>
+            
+                        <div class="check-group">
+                            <label for="terms">
+                            <input type="checkbox" name="terms" id="terms">
+                                Accept Terms and Conditions</label>
+                        </div>
+                    </form>
        </section>
          <section class="control-panel">
-            <input type="button" value="Update Values" id="btnUpdate" />
+            <input type="button" value="Submit" id="btnSubmit"/>
+            <input type="button" value="Reset" id="btnReset"/>
         </section>
         
         <script src="scripts/main.js"></script>
