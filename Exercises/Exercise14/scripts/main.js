@@ -9,42 +9,31 @@ var elms = [getElm("userName"), getElm("emailAddress"), getElm("password"), getE
 function submit(){
     for (i = 0; i < elm.length; i++) {
     var elm = elms[i];
-    if (elm.value.length === 0 && elm != elms[3,4]) {
+    if (elm.value.length === 0 && elm != elm[3,4]) {
         messages.push(elm.placeholder + "is required")
         elm.classList.add("invalid");
-    }else if(elms[3,4].value === !checked){
+        getElm("messages").innerHTML = message;
+    }else if(elm[3,4].checked == false){
         messages.push(elm.placeholder + "is required")
         elm.classList.add("invalid");
+        getElm("messages").innerHTML = message;
     }
 }
+
 }
 function reset() {
-    for (i = 0; i < elm.length; i++){
+    for (i = 0; i < elm.value.length; i++){
     var elm = elms[i];
     getElm("elm").reset;
     elm.classList.remove("invalid")
 }
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function getElm(id) {
-    return document.getElementById(id);
+function getElm(id){
+    return document.getElementById(id)
 }
