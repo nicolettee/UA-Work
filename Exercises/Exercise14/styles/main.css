@@ -25,8 +25,12 @@ label{
     background: #940069;
 }
 .errors{
-    color: #940069
+    color: #940069;
 }
+.invalid-label{
+    color: #940069;
+}
+
 .control-panel{
      text-align: center;
 }

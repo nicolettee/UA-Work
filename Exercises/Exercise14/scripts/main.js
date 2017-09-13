@@ -31,12 +31,9 @@ function submit() {
     var term = getElm("terms");
     if (term.checked === false) {
       messages.push("Terms need to be accepted.");
-      term.classList.add(".invalid-label");
+      getElm("terms-label").classList.add(".invalid-label");
     } else {
-      term.classList.remove(".invalid-label");
-    
-
-    getElm("message").innerHTML = messages;
+    getElm("terms-label").classList.remove(".invalid-label");
   }
   var top;
   {
@@ -63,8 +60,6 @@ function reset() {
     elm.classList.remove("invalid");
     term.classList.remove("invalid");
     time.classList.remove("invalid");
-    getElm("message").innerHTML = "";
-    messages.length = 0;
   }
   getElm("message").innerHTML = "";
   getElm("terms").checked = false;
