@@ -40,6 +40,12 @@ section > section > div{
     float:left;
     width:33%;
 }
+.part-1 [type="text"]{
+    background-color: #FC06AA;
+}
+.part-1 [type="checkbox"]{
+    background-color: #FFC013;
+}
 .part3{
-    display:none;
+    display: inline;
 }
