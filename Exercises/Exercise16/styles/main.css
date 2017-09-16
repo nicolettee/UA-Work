@@ -26,7 +26,7 @@ section>ol {
 
 section>section {
     border: 1px solid #e1e1e8;
-    background-color: #f7f7f9;
+    background-color: #F1E1F1;
     overflow: hidden;
     padding:10px;
     margin:0;
@@ -46,6 +46,14 @@ section > section > div{
 .part-1 [type="checkbox"]{
     background-color: #FFC013;
 }
+.part-1 a[href^="https"] {
+    color: #0057e7
+}.part-1 a[href$=".edu"]{
+    color: #a00;
+}
+.part-1 a[hef*="mart"]{
+    color:#004c91
+}
 .part3{
-    display: inline;
+    display: none;
 }
