@@ -1,11 +1,6 @@
 $(document).ready(function () {
 
-    /*  
-    $("#btnShow").on("click", display);
-    function display(){
-        $(".display-basic").show();
-        console.log("d");
-    };*/
+
 
     var b = {
         s: "#btnShow",
@@ -76,6 +71,6 @@ $(document).ready(function () {
     });
     //
     $(b.st).on("click",  function () {
-        $(e.ds)[d.st]("fast");
+        $(e.ds)[d.st]();
     });
 });
