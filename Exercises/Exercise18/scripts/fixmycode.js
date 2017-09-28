@@ -19,9 +19,9 @@ $(document).ready(function () {
         */
         if(sum > 10){
             $('txtThirdNumber').addClass('.blue');
-            $('txtThirdNumber').RemoveClass('red');
+            $('txtThirdNumber').RemoveClass('.red');
         }else{
-            $('txtThirdNumber').addClass('red');
+            $('txtThirdNumber').addClass('.red');
             $('txtThirdNumber').RemoveClass('.blue');
         }
 
