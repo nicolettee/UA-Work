@@ -11,7 +11,9 @@ $(document).ready(function () {
         /*
             Add the two numbers together
         */
-        var sum = firstNumber + secondNumber;
+        function sum(firstNumber, secondNumber){
+           return firstNumber + secondNumber;
+        }
 
         /*
             If our sum is greater than 10. Add a blue class to the input.
@@ -28,7 +30,7 @@ $(document).ready(function () {
         /*
             Update the third input field with our value.
         */
-        $('#txtThirNumber').val() = sum;
+        $('#txtThirNumber').val(sum);
     });
 
 
