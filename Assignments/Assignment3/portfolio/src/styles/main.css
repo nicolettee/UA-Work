@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body{
     background: url(../img/wood.jpg) no-repeat center center fixed;
     background-color: #C7BABA;
@@ -20,12 +24,12 @@ html, body{
     overflow: hidden;
     margin: 0 auto;
     min-height: 100%;
-    padding-bottom: 60px;
     position: relative;
+    width: 960px;
 }
 /* Top Navigation */
 header{
-    padding: 10px;
+    padding: 40px 0;;
 }
 .topNav{
     text-align: right;
@@ -62,24 +66,20 @@ header h1{
 /* Main body */
 .about{
     background: rgba(255, 255, 255, .5);
-    border-bottom-left-radius: 90px;
-    border-top-left-radius: 90px;
+    border-radius: 90px;
     display: block;
-    height: 300px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
     min-width: 600px;
     width: 50%;
 }
 .about img{  
-    border-top-right-radius: 90px;
-    border-top-left-radius: 90px;
-    border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 90px; 
+    border-radius: 90px; 
     float: left;
-    height:300px;
+    height: 300px;
     padding-right: 20px;
-    width:228px;
+    width: 228px;
 }
 .about article div{
     float: left;
@@ -92,14 +92,68 @@ header h1{
     text-align: center;
     padding-top: 10px;
 }
-/* Contact Page */
+.about div p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+/* Gallery Page */
+.gallery{
+    background-color: #000;
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+.gallery ul{
+    list-style: none;
+    margin: 0;
+    padding: 1.5em;
+}
+.gallery li{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+/* Work Page */
+.back{
+    background-color: #A8A7A7
+}
+.tile{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+/* Contact Page */
+.error{
+    color:#a00;
+    display:block;
+}
+
+.input-group{
+    margin:10px auto;
+    padding:10px;
+}
+
+.even{
+    background:#c3c5c9;
+}
+   
+.input-group input{
+    display:block;
+    width:50%;
+    font-size:20px;
+    padding:10px;
+
+}
 
 /* Footer */
 footer{
     clear: both;
     font-size: 20px;
-    padding: 20px 0;
+    padding: 40px 0;
     overflow: hidden;
 }
 .footernav{
@@ -118,7 +172,8 @@ footer{
     display: inline-block;
 }
 .footernav a{
-    color:#272525 ;
+    color:#272525;
+    font-weight: bold;
     text-decoration: none;
     padding: 25px;
 }
