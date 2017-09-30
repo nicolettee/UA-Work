@@ -31,8 +31,6 @@ $(document).ready(function () {
     
         frm.find(".error").hide();
     
-        ipg.filter(":even").addClass("even");
-    
         ni.on("blur", validate);
     
         eml.on("blur", validate);

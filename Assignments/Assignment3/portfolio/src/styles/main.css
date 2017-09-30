@@ -121,12 +121,16 @@ header h1{
 }
 .tile{
     text-align: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 
 /* Contact Page */
+.form-elements {
+    margin: 0 auto;
+    width: 400px;
+}
 .error{
     color:#a00;
     display:block;
@@ -136,18 +140,14 @@ header h1{
     margin:10px auto;
     padding:10px;
 }
-
-.even{
-    background:#c3c5c9;
-}
-   
-.input-group input{
+.input-group input, .input-group textarea{
     display:block;
-    width:50%;
-    font-size:20px;
+    width: 100%;
+    font:20px sans-serif;
     padding:10px;
-
 }
+
+
 
 /* Footer */
 footer{
