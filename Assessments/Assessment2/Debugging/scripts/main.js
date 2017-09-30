@@ -29,56 +29,57 @@
     Points Available: 30points
 */
 $(function () {
-
-
-    //This is supposed to add an event listener but it's causing an error
-    //Fix it please.
-    //document.getElementById('#btnMake').addEventListener('click', build);
-
+    $("#btnMake").on("click", build);
     function build() {
-        var firstName = $('.firstName');
-        var firstNameValue = firstName.value;
+        var firstName = $('#firstName');
+        var firstNameValue = firstName.val();
 
 
-        var lastName = $('.lastName');
-        var lastNameValue = lastName.value;
+        var lastName = $('#lastName');
+        var lastNameValue = lastName.val();
 
-        /*invalid should add a red border around the respective input
-            It will also show a hidden error message */
-        if (firstNameValue = '') {
-            lastName.addClass('invalid');
+        var state = $('#state');
+        var stateValue = state.val();
 
-            var parentDiv = firstname.closets('#input-group');
-            var errorSpan = parentDiv.find('errors');
+        /* First Name Validation */
+        if (firstNameValue === '') {
+            firstName.addClass('invalid');
+
+            var parentDiv = firstName.closest('.input-group');
+            var errorSpan = parentDiv.find('.errors');
             errorSpan.show();
         }
-
-        if (lastNameValue = '') {
+         /* Last Name Validation */
+        if (lastNameValue === '') {
             lastName.addClass('invalid');
 
-            var parentDiv = firstname.closets('#input-group');
-            var errorSpan = parentDiv.find('errors');
+            var parentDiv = lastName.closest('.input-group');
+            var errorSpan = parentDiv.find('.errors');
             errorSpan.show();
+        }
+        /* State Validation */
+        if(stateValue === ""){
+            var parentDiv = state.closest('.input-group');
+            var errorSpan = parentDiv.find('.errors');
+            errorSpan.show();
+        }else{
+            $(".errors").hide();
         }
 
 
-        /*====================================
-            I need to create an object, but it's not working
-            so I just commented it out.
-            Please fix it
-        ======================================*/
-        /*
+        /* User Object */
+        
         var userObject = {
-            firstName = firstName;
-            lastName = lastName;
-            fullname = function () {
-                firstname + ' ' + lastName;
-            };
-            state = stateValue;
+            fName: firstNameValue,
+            lName: lastNameValue,
+            st: stateValue,
+            fullName: function () {
+                return fName + ' ' + lName;
+            }
         };
 
         console.log(userObject);
-        */
+        
 
 
     }
@@ -107,6 +108,10 @@ $(function () {
 
 */
 
+var lastName = $('#lastName');
+var lastNameValue = lastName.val();
+var lnlength = lastNameValue.length
+console.log(lnlength);
 
 
 
@@ -119,8 +124,12 @@ $(function () {
     console.log(foo) // Outputs 13
 
 */
+var array = [1, 2, 3];
 
-
+for (var i = 0, sum = 0; i < array.length; sum += array[i++])
+    ;
+    
+console.log(sum)
 /*
     Write a JavaScript function that converts a decimal
     into a percentage.
@@ -134,6 +143,11 @@ $(function () {
 
 */
 
+var decimal = .78 
+function math() {
+var sum = decimal *= 100;
+}
+console.log(sum)
 
 /*
     Write a JavaScript function that takes a date and adds a 

@@ -125,5 +125,20 @@ ul {
     margin: 0 auto;
 }
 
+.error{
+    color:#ff0000;
+    display:none;
+}
 
+.input-group{
+        margin:10px auto;
+        padding:10px;
+}
+.input-group input{
+    display:inline-block;
+    width:100%;
+    font-size:20px;
+    padding:10px;
 
+}
+   
