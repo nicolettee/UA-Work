@@ -142,12 +142,13 @@ console.log(sum)
     console.log(foo2) //Outputs "50%"
 
 */
-
-var decimal = .78 
+/* I can't math */
+var decimal = .5 
 function math() {
-var sum = decimal *= 100;
+var sums = decimal * 100;
+return sums
 }
-console.log(sum)
+console.log(sums)
 
 /*
     Write a JavaScript function that takes a date and adds a 
@@ -159,7 +160,7 @@ console.log(sum)
     console.log(newD);  //outputs Thu Jan 11 2001 00:00:00 GMT-0600 (Central Standard Time)
 */
 
-
+/* yeah */
 
 
 /*

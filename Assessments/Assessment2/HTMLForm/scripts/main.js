@@ -34,17 +34,10 @@ $(document).ready(function () {
                     errorMsg.fadeOut("slow")
                 }
             }
-            var term = getElm("terms");
-            if (term.checked === false) {
-              messages.push("Terms need to be accepted.");
-              getElm("terms-label").classList.add(".invalid-label");
-            } else {
-            getElm("terms-label").classList.remove(".invalid-label");
+            
           }
 
             frm.find(".error").hide();
-
-            ipg.filter(":even").addClass("even");
 
             fni.on("blur", validate);
 
@@ -53,7 +46,13 @@ $(document).ready(function () {
             eml.on("blur", validate);
 
             eml.on("blur", validEmail);
-
+           
+            var term = getElm("terms");
+            if (term.checked === false) {
+              messages.push("Terms need to be accepted.");
+              getElm("terms-label").classList.add(".invalid-label");
+            } else {
+            getElm("terms-label").classList.remove(".invalid-label");
 
 
         }
