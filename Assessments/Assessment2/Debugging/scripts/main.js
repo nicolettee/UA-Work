@@ -6,7 +6,7 @@
     Clean Code and Comments - 10 points
 
     Total Challenge/Bonus points -> 10
-*/ 
+*/
 
 
 /*========================
@@ -30,6 +30,7 @@
 */
 $(function () {
     $("#btnMake").on("click", build);
+
     function build() {
         var firstName = $('#firstName');
         var firstNameValue = firstName.val();
@@ -49,7 +50,7 @@ $(function () {
             var errorSpan = parentDiv.find('.errors');
             errorSpan.show();
         }
-         /* Last Name Validation */
+        /* Last Name Validation */
         if (lastNameValue === '') {
             lastName.addClass('invalid');
 
@@ -58,17 +59,17 @@ $(function () {
             errorSpan.show();
         }
         /* State Validation */
-        if(stateValue === ""){
+        if (stateValue === "") {
             var parentDiv = state.closest('.input-group');
             var errorSpan = parentDiv.find('.errors');
             errorSpan.show();
-        }else{
+        } else {
             $(".errors").hide();
         }
 
 
         /* User Object */
-        
+
         var userObject = {
             fName: firstNameValue,
             lName: lastNameValue,
@@ -79,7 +80,7 @@ $(function () {
         };
 
         console.log(userObject);
-        
+
 
 
     }
@@ -127,8 +128,8 @@ console.log(lnlength);
 var array = [1, 2, 3];
 
 for (var i = 0, sum = 0; i < array.length; sum += array[i++])
-    ;
-    
+;
+
 console.log(sum)
 /*
     Write a JavaScript function that converts a decimal
@@ -143,11 +144,8 @@ console.log(sum)
 
 */
 /* I can't math */
-var decimal = .5 
-function math() {
-var sums = decimal * 100;
-return sums
-}
+var x = .6;
+var sums = x * 100 + "%";
 console.log(sums)
 
 /*
@@ -159,9 +157,14 @@ console.log(sums)
     var newD = addDays(d, 10);
     console.log(newD);  //outputs Thu Jan 11 2001 00:00:00 GMT-0600 (Central Standard Time)
 */
-
-/* yeah */
-
+function addDays(date, days) {
+    var days = 10;
+    var result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
+  }
+  
+  console.log(result)
 
 /*
     Challenge - 
