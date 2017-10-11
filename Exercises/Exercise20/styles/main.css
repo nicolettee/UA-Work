@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+.main-content{
+    width:960px;
+    margin:20px auto;
+}
+
+.fl{
+    float:left;
+    width:50%;
+}
+
+.fr{
+    float:right;
+    width:50%;
+}
+/* Part 2 */
+@media screen and (max-width:500px){
+    .main-content{
+        color:blue;
+    }
+}
+@media screen and (min-width:400px) and (max-width:800px){
+    p{
+        background-color:#888;
+    }
+}
+@media screen and (min-width:960px){
+   ol{
+        font-size: 20px;
+   } 
+}
+@media screen and (max-width:480px){
+    .main-content{
+        width: 100%;
+    }
+    .fl, .fr{
+        clear: both;
+        width: 100%;
+    }
+}
