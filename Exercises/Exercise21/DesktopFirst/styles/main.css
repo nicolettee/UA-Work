@@ -84,4 +84,15 @@ section {
     .image-gallery li{
        width: 50%;
     }
+    a,
+    nav li {
+       display: block;
+    }
+    nav li{
+        border: 1px solid #fff;
+        
+    }
+    nav ul{
+        padding: 0;
+    }
 }
