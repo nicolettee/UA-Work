@@ -32,6 +32,7 @@ a:hover {
 
 .main-container {
     margin: 0 auto;
+    max-width: 960px;
 }
 
 .main-header {
@@ -50,8 +51,10 @@ a:hover {
 }
 
 .hero img {
-    width: 100%;
-    height: auto
+    height: auto;
+    max-width: 620px;
+    margin: auto;
+    display: block;
 }
 
 section {
@@ -109,4 +112,39 @@ footer>nav {
 footer>nav>a {
     padding: 0 10px;
     display:block;
+}
+
+@media screen and (min-width:560px){
+    .article-list article, .article-list article img{
+        float: left;
+        width: auto;
+        height: auto;
+    }
+}
+@media screen and (min-width:720px) {
+    .main-header nav{
+        border-radius: 25px;
+        display: block;
+        text-align: center;
+    }
+    .main-header nav a{
+        display: inline-block;
+    }
+    .article-list{
+        float: left;
+        width: 70%;
+    }
+    aside{
+        float: right;
+        width: 30%;
+    }
+    
+    footer nav a{
+        float: right;
+    }
+}
+@media screen and min-width(850px){
+    .sponsors>.sponsor-ads>img{
+        width: 100%;
+    }
 }
