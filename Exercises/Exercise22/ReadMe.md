@@ -3,7 +3,7 @@ In this exercise, we are going to practice some basic flexbox functionality.  Us
 
 ## Part 1 - Media Gallery Images
 
-The floats and widths have been removed.  Add flexbox to make them behave like they do in the Dekstop First exercise from Exercise 21.  Final result will look and behave like this: [Flex Gallery](https://worthyd.github.io/dummy-sites/flex-gallery/).
+The floats and widths have been removed.  Add flexbox to make them behave like they do in the Desktop First exercise from Exercise 21.  Final result will look and behave like this: [Flex Gallery](https://worthyd.github.io/dummy-sites/flex-gallery/).
 
 ## Part 2 - The main menu
 
