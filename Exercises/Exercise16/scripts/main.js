@@ -32,8 +32,8 @@ $(document).ready(function () {
 
     //Part 2
     //show
-    $(b.s).on("click",  function () {
-        $(e.db)[d.s]();
+    $(btnShow).on("click",  function () {
+        $(display-basic)[show]();
     });
     //hide
     $(b.h).on("click",  function () {
@@ -53,7 +53,7 @@ $(document).ready(function () {
     });
      //fade out 
      $(b.fo).on("click",  function () {
-        $(e.df)[d.fo]("slow");
+        $(display-fade)[fadeOut]("slow");
     });
     // fade toggle
     $(b.ft).on("click", function () {
