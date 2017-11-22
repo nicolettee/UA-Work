@@ -1,7 +1,9 @@
 /*
     Q1 - Write a media query for desktop first.  The break point needs to be at 960px;
 */
-
+@media only screen and (max-width : 960px) {
+    
+   }
 
 
 
@@ -10,15 +12,20 @@
     Q2 - Write a media query for mobile first.  The break point needs to be at 720px;
 */
 
-
+@media only screen and (min-width : 720px) {
+    
+   }
 
 
 /*
     Q3 - What CSS property are you having the most trouble figuring out?
+    freaking columns
 */
 
 
 /*
     Q4 - What is the best CSS property and why?
+    scss, because it makes css tolerable. :) jk, sort of.
+    I do actually enjoy flex. It is fun to see everything work the way it's supposed to.
 */
 
